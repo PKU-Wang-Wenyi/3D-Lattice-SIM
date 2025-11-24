@@ -1,0 +1,105 @@
+
+ans =
+
+    'P:\3D3ISIM\3ILattice3DSIM\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488_EMTB_mBaojin-P_012_MMStack_Default.ome.tif'
+
+  [SIM, WF] = recon3I_SIM_ZT(param);
+{在当前文件夹或 MATLAB 路径中未找到 PCMseparate_tempF_3D1，但它存在于:
+ I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM
+    P:\3D3ISIM\ZeissSquireLattice3DSIM_program_and_code\rawcode
+    I:\Lattice3DSIM\3I3DSIM submit\Zeiss3DSIM
+    I:\Lattice3DSIM\3I3DSIM submit\251115Zeiss
+    I:\Lattice3DSIM\Zeiss 3DSIM\251115Zeiss
+    I:\Lattice3DSIM\算法流程图画图\251108速度优化
+
+更改 MATLAB 当前文件夹 或 将其文件夹添加到 MATLAB 路径
+
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KapproxEstimationF', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\KapproxEstimationF.m', 14)" style="font-weight:bold">KapproxEstimationF</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\KapproxEstimationF.m',14,0)">第 14 行</a>)
+    [Separated]=PCMseparate_tempF_3D1(obj);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('recon3I_SIM_ZT', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\recon3I_SIM_ZT.m', 72)" style="font-weight:bold">recon3I_SIM_ZT</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\recon3I_SIM_ZT.m',72,0)">第 72 行</a>)
+        s_class= KapproxEstimationF(s_class);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+         [SIM, WF] = recon3I_SIM_ZT(param);
+{在当前文件夹或 MATLAB 路径中未找到 Kai2Opt3D1，但它存在于:
+ I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM
+    P:\3D3ISIM\ZeissSquireLattice3DSIM_program_and_code\rawcode
+    I:\Lattice3DSIM\3I3DSIM submit\Zeiss3DSIM
+    I:\Lattice3DSIM\3I3DSIM submit\251115Zeiss
+    I:\Lattice3DSIM\Zeiss 3DSIM\251115Zeiss
+    I:\Lattice3DSIM\算法流程图画图\251108速度优化
+
+更改 MATLAB 当前文件夹 或 将其文件夹添加到 MATLAB 路径
+
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('PCMseparate_tempF_3D1>@(phase0)Kai2Opt3D1(fDuplex,phase0,G)', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\PCMseparate_tempF_3D1.m', 10)" style="font-weight:bold">PCMseparate_tempF_3D1>@(phase0)Kai2Opt3D1(fDuplex,phase0,G)</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\PCMseparate_tempF_3D1.m',10,0)">第 10 行</a>)
+Kai2Opt3D0 = @(phase0) Kai2Opt3D1(fDuplex, phase0,G);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fminsearch', 'D:\MATLAB\R2025a\toolbox\matlab\optimfun\optimfun\fminsearch.m', 209)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\optimfun\optimfun\fminsearch.m',209,0)">第 209 行</a>)
+f = funfcn(x,varargin{:});
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('PCMseparate_tempF_3D1', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\PCMseparate_tempF_3D1.m', 17)" style="font-weight:bold">PCMseparate_tempF_3D1</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\PCMseparate_tempF_3D1.m',17,0)">第 17 行</a>)
+[phaseShift, fval] = fminsearch(Kai2Opt3D0, phase0, options);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KapproxEstimationF', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\KapproxEstimationF.m', 14)" style="font-weight:bold">KapproxEstimationF</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\KapproxEstimationF.m',14,0)">第 14 行</a>)
+    [Separated]=PCMseparate_tempF_3D1(obj);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('recon3I_SIM_ZT', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\recon3I_SIM_ZT.m', 72)" style="font-weight:bold">recon3I_SIM_ZT</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\recon3I_SIM_ZT.m',72,0)">第 72 行</a>)
+        s_class= KapproxEstimationF(s_class);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+
+katest =
+
+   63.5916
+
+
+katest =
+
+   63.6123
+
+
+katest =
+
+   63.7121
+
+
+katest =
+
+   63.7508
+
+
+katest =
+
+   63.6214
+
+
+katest =
+
+   63.7703
+
+modFac求和未超过保存值，不保存数据
+[gen3DOTF_cache] 参数一致，直接加载 OTF_cache.mat 中的 OTF。
+0.066667
+0.13333
+0.2
+0.26667
+{操作在以下过程中被用户终止 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.io.internal.imagesci.imtifinfo', 'D:\MATLAB\R2025a\toolbox\matlab\matlab_images\tiff\+matlab\+io\+internal\+imagesci\imtifinfo.m', 29)" style="font-weight:bold">matlab.io.internal.imagesci.imtifinfo</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\matlab_images\tiff\+matlab\+io\+internal\+imagesci\imtifinfo.m',29,0)">第 29 行</a>)
+
+
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imtifinfo', 'D:\MATLAB\R2025a\toolbox\matlab\matlab_im\private\imtifinfo.m', 13)" style="font-weight:bold">imtifinfo</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\matlab_im\private\imtifinfo.m',13,0)">第 13 行</a>)
+info = matlab.io.internal.imagesci.imtifinfo(filename);
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imfinfo', 'D:\MATLAB\R2025a\toolbox\matlab\matlab_im\imfinfo.m', 249)" style="font-weight:bold">imfinfo</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\matlab_im\imfinfo.m',249,0)">第 249 行</a>)
+        info = feval(fmt_s.info, filename);
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imreadstack_ZT', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\imreadstack_ZT.m', 31)" style="font-weight:bold">imreadstack_ZT</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\imreadstack_ZT.m',31,0)">第 31 行</a>)
+            file_cache(filename) = imfinfo(filename);
+                                   ^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('recon3I_SIM_ZT', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\recon3I_SIM_ZT.m', 4)" style="font-weight:bold">recon3I_SIM_ZT</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\recon3I_SIM_ZT.m',4,0)">第 4 行</a>)
+    rawdata=imreadstack_ZT(obj.rawinfo,numT);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Main_3ISIM_ZT_AF', 'P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\Main_3ISIM_ZT_AF.m', 80)" style="font-weight:bold">Main_3ISIM_ZT_AF</a> (<a href="matlab: opentoline('P:\3D3ISIM\3ILattice3DSIM_program_and_code\rawcode\Main_3ISIM_ZT_AF.m',80,0)">第 80 行</a>)
+            [SIM, WF] = recon3I_SIM_ZT(param);
+                        ^^^^^^^^^^^^^^^^^^^^^
+} 
