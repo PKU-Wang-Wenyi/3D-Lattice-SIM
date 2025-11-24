@@ -6,7 +6,7 @@ Currently, the package contains:
 - `.m` source code
 - `.exe` files containing GUI of the 3D-Lattice-SIM reconstruction code
 - We have also developed a reconstruction scheme tailored for orthogonal lattice 3D-SIM data acquired with the ZEISS Elyra 7 system.
-## 💻 System Requirements
+## 💿️  System Requirements
 
 The analytical reconstruction software is implemented with MATLAB 2025a and tested in Windows 10 & 11 environments.
 
@@ -14,5 +14,7 @@ The analytical reconstruction software is implemented with MATLAB 2025a and test
 To run `.exe` files, **MATLAB Runtime R2025a (25.1)** is necessary.
 
 **Download link:** [https://ww2.mathworks.cn/products/compiler/matlab-runtime.html](https://ww2.mathworks.cn/products/compiler/matlab-runtime.html)
+## 💻 Hardware Requirements
+A computing device equipped with an NVIDIA GPU is essential to run this software. Our tests were conducted on a system with an Intel Core i9-14900K CPU, 128 GB of RAM, and an NVIDIA GeForce RTX 5090 D GPU with 32 GB of VRAM. To ensure a fair comparison, other software such as Open3DSIM and FO3DSIM were also executed and benchmarked on the same computer.
 ## 🌐 Datasets
 The example 3D-Lattice-SIM imaging data are available at the figshare repository: https://figshare.com/s/708e68e46810df2981bd
