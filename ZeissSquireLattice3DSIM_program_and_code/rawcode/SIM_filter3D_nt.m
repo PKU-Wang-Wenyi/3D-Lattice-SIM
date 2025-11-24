@@ -1,0 +1,34 @@
+function [SIM,filter]=SIM_filter3D_nt(s_class,obj,FFTSIM,qvector,Filter3D)
+nz_RAW=obj.sizeZ;
+if mod(nz_RAW,2)==0
+    nz=nz_RAW+3;
+else
+    nz=nz_RAW+4;
+end
+FFTSIM=ifftn(ifftshift(FFTSIM));
+FFTSIM_pad=zeros(size(FFTSIM,1),size(FFTSIM,2),nz,'like',FFTSIM);
+FFTSIM_pad(:,:,1:nz_RAW)=FFTSIM;
+clear FFTSIM
+FFTSIM=fftshift(fftn(FFTSIM_pad));
+clear FFTSIM_pad
+if max(Filter3D(:))==0
+    [OTF3D,otfobj]=gen3DOTF1(obj,nz);
+    qvector1=qvector./2;
+    kxy = obj.w.*obj.pixelsize./sqrt(sum(qvector1.^2));
+    lambda = obj.RefractiveIndex/obj.exlambda;
+    kz = (lambda-sqrt(lambda^2-1/kxy.^2)).*nz.*obj.Zstep;
+    [OTFcombine,notch,OTF_double]=shiftOTF(OTF3D,s_class,obj,kz,qvector);
+    obj.kz=kz;
+    [filter] = filter3D(OTFcombine,s_class,otfobj,obj.w1,obj.w2,obj.Zstep,notch,OTF_double,obj,qvector);
+else
+    filter=Filter3D;
+end
+FFTSIM=FFTSIM.*filter;
+SIM=real(ifftn(ifftshift(FFTSIM)));
+SIM=SIM(:,:,1:1:nz_RAW);
+SIM(SIM<0)=0;
+SIM=gather(SIM);
+SIM=im2uint16(mat2gray(SIM-min(SIM(:))));
+SIM=SIM-000;
+SIM(SIM<0)=0;
+end

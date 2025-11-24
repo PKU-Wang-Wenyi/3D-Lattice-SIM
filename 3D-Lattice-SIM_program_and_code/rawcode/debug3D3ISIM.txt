@@ -1,0 +1,74 @@
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM\run3I3DSIMrecon.m',3,1)">3   </a>end
+app.attStrengthSpinner.Value
+
+ans =
+
+    0.9800
+
+param.NA=1.49;
+param.pixelsize=65;% in nm
+param.RefractiveIndex=1.518;
+param.nAngle=1;
+param.nPhase=13;
+param.Zstep=125;
+param.slice_cut=0;
+param.attStrength=app.attStrengthSpinner.Value;
+param.attWidth=app.attWidthSpinner.Value;
+param.w1=app.w1Spinner.Value;
+param.w2=app.w2Spinner.Value;
+param.RL=app.RLSpinner.Value;
+param.Dark=app.DarkSpinner.Value;
+
+ans =
+
+    'I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488_EMTB_mBaojin-P_012_MMStack_Default.ome.tif'
+
+
+katest =
+
+   63.5916
+
+
+katest =
+
+   63.6123
+
+
+katest =
+
+   63.7121
+
+
+katest =
+
+   63.7508
+
+
+katest =
+
+   63.6214
+
+
+katest =
+
+   63.7703
+
+modFac求和未超过保存值，不保存数据
+[gen3DOTF_cache] 参数一致，直接加载 OTF_cache.mat 中的 OTF。
+0.066667
+0.13333
+0.2
+0.26667
+0.33333
+0.4
+0.46667
+0.53333
+0.6
+0.66667
+0.73333
+0.8
+0.86667
+0.93333
+1
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM\run3I3DSIMrecon.m',94,1)">94  </a>end
+Reconstruction completed successfully!
