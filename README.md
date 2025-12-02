@@ -19,3 +19,4 @@ A computing device equipped with an NVIDIA GPU is essential to run this software
 For optimal runtime performance, it is strongly recommended to store the data on a solid-state drive (SSD) to accelerate I/O speed. Otherwise, data reading and writing can become a major time bottleneck, sometimes even exceeding the reconstruction time itself.
 ## 🌐 Datasets
 The example 3D-Lattice-SIM imaging data are available at the figshare repository: https://figshare.com/s/708e68e46810df2981bd
+For more comprehensive data, including the dual-color long-term imaging datasets, please refer to Zenodo.[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17774000.svg)](https://doi.org/10.5281/zenodo.17774000)
