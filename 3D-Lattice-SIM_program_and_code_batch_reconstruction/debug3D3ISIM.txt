@@ -1,0 +1,54 @@
+
+ans =
+
+    'R:\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488_EMTB_mBaojin-P_012_MMStack_Default.ome.tif'
+
+
+katest =
+
+   63.5915
+
+
+katest =
+
+   63.6124
+
+
+katest =
+
+   63.7121
+
+
+katest =
+
+   63.7506
+
+
+katest =
+
+   63.6215
+
+
+katest =
+
+   63.7703
+
+已保存新的kAmean、phaseA和modFac_sum数据
+[gen3DOTF_cache] 未检测到 OTF_cache.mat，开始生成。
+[gen3DOTF_cache] 已保存新的 OTF_cache.mat。
+0.066667
+0.13333
+0.2
+0.26667
+0.33333
+0.4
+0.46667
+0.53333
+0.6
+0.66667
+0.73333
+0.8
+0.86667
+0.93333
+1
+Reconstruction completed successfully!

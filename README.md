@@ -6,6 +6,11 @@ Currently, the package contains:
 - `.m` source code
 - `.exe` files containing GUI of the 3D-Lattice-SIM reconstruction code
 - We have also developed a reconstruction scheme tailored for orthogonal lattice 3D-SIM data acquired with the ZEISS Elyra 7 system.
+- 2025.12.17:In addition to the batch reconstruction function, we have also added the capability for single image file reconstruction, which is used to evaluate the effectiveness and stability of the reconstruction tools and the system. In particular, if you are using the batch reconstruction function, a params.txt file is required. It should contain information about z, t, and the Z-step. For example:
+nt = 50;
+nz = 8;
+dz = 0.125;See exampleparams.txt . In addition, all files should end with *ome.tif. Micro-manager will automatically save TIFF files larger than 4GB as *_1.ome.tif. The batch reconstruction logic will automatically determine the ordering of these files based on the filenames and param.txt.
+ If you are using the single file reconstruction function, you will need to manually input this information into the program.
 ## 💿️  System Requirements
 
 The analytical reconstruction software is implemented with MATLAB 2025a and tested in Windows 10 & 11 environments.

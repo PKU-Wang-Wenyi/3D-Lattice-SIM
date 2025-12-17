@@ -1,0 +1,32 @@
+
+katest =
+
+   38.1333
+
+
+katest =
+
+   38.1704
+
+
+katest =
+
+   38.2499
+
+
+katest =
+
+   38.1851
+
+
+katest =
+
+   38.1601
+
+
+katest =
+
+   38.2335
+
+modFac求和未超过保存值，不保存数据
+[gen3DOTF_cache] 参数一致，直接加载 OTF_cache.mat 中的 OTF。
