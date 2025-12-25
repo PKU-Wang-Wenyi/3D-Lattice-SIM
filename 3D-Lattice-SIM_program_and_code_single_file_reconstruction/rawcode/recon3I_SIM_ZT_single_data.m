@@ -45,11 +45,17 @@ for numT=1:obj.sizeT
     WF=imresize(squeeze(mean(rawdata,3)),2,"nearest");
     % SIM_rawsize=zeros(size(WF));
     if rawdata_slice_cut>0
-    [rawdata,cut_ind]=(rawdata_slice_cut_fun(rawdata,maxpos,rawdata_slice_cut,cut_ind,maxint));
+        [rawdata,cut_ind]=(rawdata_slice_cut_fun(rawdata,maxpos,rawdata_slice_cut,cut_ind,maxint));
     end
     obj.sizeZ=size(rawdata,4);
     rawdata=reshape(rawdata,[sizeX,sizeY,obj.nPhase*obj.sizeZ]);
     rawdata=edgefilter(single(rawdata));
+    if sizeX~=sizeY
+        temp=zeros(obj.w,obj.w,obj.nPhase*obj.sizeZ,"like",rawdata);
+        temp(1:sizeX,1:sizeY,:)=rawdata;
+        rawdata=temp;
+        clear temp
+    end
     if obj.RL>0
         rawdata=uint16(rawdata);
         psf=single(abs(otf2psf(OTFo)));
@@ -62,13 +68,7 @@ for numT=1:obj.sizeT
         rawdata=Dark(rawdata,obj.Dark);
         % rawdata=dark_sectioning(rawdata,obj.lambda,obj.NA,obj.pixelsize,obj.Dark);
     end
-    rawdata=reshape(rawdata,[sizeX,sizeY,obj.nPhase,obj.sizeZ]);
-    if sizeX~=sizeY
-        temp=zeros(obj.w,obj.w,obj.nPhase,obj.sizeZ,"like",rawdata);
-        temp(1:sizeX,1:sizeY,:,:)=rawdata;
-        rawdata=temp;
-        clear temp
-    end
+    rawdata=reshape(rawdata,[obj.w,obj.w,obj.nPhase,obj.sizeZ]);
     if numT==1
         s_class = single_orientation_class(OTFo,Kotf,rawdata,PSFe);
         s_class= KapproxEstimationF(s_class);
@@ -121,7 +121,7 @@ for numT=1:obj.sizeT
     end
     [SIM_all,Filter3D]=SIM_filter3D_nt(s_class,obj,s_class.fftDirectlyCombined,Kotf*coe,Filter3D);
     WF_all=WF;
-    SIM_all=im2uint16(mat2gray(SIM_all));
+    SIM_all=im2uint16(mat2gray(SIM_all(1:2*sizeX,1:2*sizeY,:)));
     WF_all=im2uint16(mat2gray(WF_all));
     filename=['_T',num2str(numT)];
     imwritestack_16(SIM_all,strrep(obj.resultname,'TEMP_STR',['SIM',filename ]))
