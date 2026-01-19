@@ -1,0 +1,52 @@
+正在使用 'LocalProfile1' 配置文件启动并行池(parpool)...
+
+{操作在以下过程中被用户终止 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.cluster.wait', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+cluster\wait.m', 15)" style="font-weight:bold">parallel.internal.cluster.wait</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+cluster\wait.m',15,0)">第 15 行</a>)
+
+
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.Job/doWait', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\@Job\Job.m', 692)" style="font-weight:bold">parallel.Job/doWait</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\@Job\Job.m',692,0)">第 692 行</a>)
+            ok = parallel.internal.cluster.wait( job, varargin{:} );
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.Job/wait', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\@Job\Job.m', 1352)" style="font-weight:bold">parallel.Job/wait</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\@Job\Job.m',1352,0)">第 1352 行</a>)
+                ok = job.doWait( state, timeout );
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.pool.ClusterClientSession/waitForConnections', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\ClusterClientSession.m', 129)" style="font-weight:bold">parallel.internal.pool.ClusterClientSession/waitForConnections</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\ClusterClientSession.m',129,0)">第 129 行</a>)
+            while ~wait(job, 'running', 0.1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.pool.AbstractInteractiveClient/start', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\AbstractInteractiveClient.m', 119)" style="font-weight:bold">parallel.internal.pool.AbstractInteractiveClient/start</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\AbstractInteractiveClient.m',119,0)">第 119 行</a>)
+                session.waitForConnections(checkFcn, obj.ParallelJob);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.pool.AbstractClusterPool>iStartClient', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\@AbstractClusterPool\AbstractClusterPool.m', 753)" style="font-weight:bold">parallel.internal.pool.AbstractClusterPool>iStartClient</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\@AbstractClusterPool\AbstractClusterPool.m',753,0)">第 753 行</a>)
+client.start(sessionBuildFcn, sessionInfo, numWorkers, cluster, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.pool.AbstractClusterPool.hBuildPool', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\@AbstractClusterPool\AbstractClusterPool.m', 570)" style="font-weight:bold">parallel.internal.pool.AbstractClusterPool.hBuildPool</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\@AbstractClusterPool\AbstractClusterPool.m',570,0)">第 570 行</a>)
+            iStartClient(client, sessionInfo, cluster, argsList);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.pool.doParpool', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\doParpool.m', 22)" style="font-weight:bold">parallel.internal.pool.doParpool</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+pool\doParpool.m',22,0)">第 22 行</a>)
+    pool = parallel.internal.pool.AbstractClusterPool.hBuildPool(constructorArgs{:});
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parpool', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\cluster\parpool.m', 116)" style="font-weight:bold">parpool</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\cluster\parpool.m',116,0)">第 116 行</a>)
+        pool = parallel.internal.pool.doParpool(sessionInfo, varargin{:});
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.parpool.getOrCreateCurrentPool', 'D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+parpool\getOrCreateCurrentPool.m', 13)" style="font-weight:bold">parallel.internal.parpool.getOrCreateCurrentPool</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\cluster\+parallel\+internal\+parpool\getOrCreateCurrentPool.m',13,0)">第 13 行</a>)
+        pool = parpool(varargin{:});
+               ^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('pctTryCreatePoolIfNecessary', 'D:\MATLAB\R2025a\toolbox\parallel\parallel\pctTryCreatePoolIfNecessary.m', 20)" style="font-weight:bold">pctTryCreatePoolIfNecessary</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\parallel\parallel\pctTryCreatePoolIfNecessary.m',20,0)">第 20 行</a>)
+    pool = parallel.internal.parpool.getOrCreateCurrentPool();
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel_function', 'D:\MATLAB\R2025a\toolbox\matlab\lang\parallel_function.m', 389)" style="font-weight:bold">parallel_function</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\lang\parallel_function.m',389,0)">第 389 行</a>)
+    [isPoolRunning, pool] = pctTryCreatePoolIfNecessary();
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('recon3I_SIM_ZT_single_data', 'I:\Lattice3DSIM\3I3DSIM submit\20260119加入PCA参数估计模块\3D-Lattice-SIM\PCA3D-Lattice-SIM_program_and_code_single_file_reconstruction_PCA_parameter_Estimation\rawcode\recon3I_SIM_ZT_single_data.m', 63)" style="font-weight:bold">recon3I_SIM_ZT_single_data</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20260119加入PCA参数估计模块\3D-Lattice-SIM\PCA3D-Lattice-SIM_program_and_code_single_file_reconstruction_PCA_parameter_Estimation\rawcode\recon3I_SIM_ZT_single_data.m',63,0)">第 63 行</a>)
+        parfor nz=1:size(rawdata,3)
+        ^
+位置 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Main_3ISIM_ZT_AF', 'I:\Lattice3DSIM\3I3DSIM submit\20260119加入PCA参数估计模块\3D-Lattice-SIM\PCA3D-Lattice-SIM_program_and_code_single_file_reconstruction_PCA_parameter_Estimation\rawcode\Main_3ISIM_ZT_AF.m', 52)" style="font-weight:bold">Main_3ISIM_ZT_AF</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20260119加入PCA参数估计模块\3D-Lattice-SIM\PCA3D-Lattice-SIM_program_and_code_single_file_reconstruction_PCA_parameter_Estimation\rawcode\Main_3ISIM_ZT_AF.m',52,0)">第 52 行</a>)
+[SIM, WF] = recon3I_SIM_ZT_single_data(param);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+Main_3ISIM_ZT_AF
+[警告: 未找到文件或者权限被拒绝] 
+[> 位置：<a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Main_3ISIM_ZT_AF', 'I:\Lattice3DSIM\3I3DSIM submit\20260119加入PCA参数估计模块\3D-Lattice-SIM\PCA3D-Lattice-SIM_program_and_code_single_file_reconstruction_PCA_parameter_Estimation\rawcode\Main_3ISIM_ZT_AF.m', 5)" style="font-weight:bold">Main_3ISIM_ZT_AF</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20260119加入PCA参数估计模块\3D-Lattice-SIM\PCA3D-Lattice-SIM_program_and_code_single_file_reconstruction_PCA_parameter_Estimation\rawcode\Main_3ISIM_ZT_AF.m',5,0)">第 5 行</a>)] 
+正在使用 'LocalProfile1' 配置文件启动并行池(parpool)...
+2026-01-19 13:50:23: 作业已排队。正在等待 ID 为 3 的并行池作业启动...
+已连接到具有 24 个工作进程的并行池。
+[gen3DOTF_cache] 参数一致，直接加载 OTF_cache.mat 中的 OTF。

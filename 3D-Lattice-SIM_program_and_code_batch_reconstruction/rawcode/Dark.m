@@ -7,7 +7,8 @@ pixelsize = 65;
 %% Read data
 image0 = gpuArray((double((src))));
 % image0=importImages(image0);
-image0 = 255*(image0 - min(min(image0)))./(max(max(image0))-min(min(image0)));
+% image0 = 255*(image0 - min(min(image0)))./(max(max(image0))-min(min(image0)));
+image0=image0-min(image0);
 [Nx0,Ny0,~] = size(image0);
 temp=image0;
 temp(:,1,:)=image0(:,2,:);

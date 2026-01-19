@@ -7,13 +7,13 @@ end
 diary('reconinfo.txt')
 param.NA=1.49;
 param.pixelsize=65;% in nm
-param.imgname = '..\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488+561_COS7_bj-EM—BD—SEC_013_Channel_488_MMStack_Default.ome.tif';
+param.imgname = '..\..\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_SEC_013_Channel_488_MMStack_Default.ome.tif';
 %%
 param.RefractiveIndex=1.518;
 param.attStrength=0.90;
 param.attWidth=1.5;
 param.w1=1;
-param.w2=0.9;
+param.w2=0.1;
 param.RL=0;
 param.nAngle=1;
 param.nPhase=13;
