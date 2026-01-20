@@ -1,0 +1,203 @@
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM\run3I3DSIMrecon.m',3,1)">3   </a>end
+app.attStrengthSpinner.Value
+
+ans =
+
+    0.9800
+
+param.NA=1.49;
+param.pixelsize=65;% in nm
+param.RefractiveIndex=1.518;
+param.nAngle=1;
+param.nPhase=13;
+param.Zstep=125;
+param.slice_cut=0;
+param.attStrength=app.attStrengthSpinner.Value;
+param.attWidth=app.attWidthSpinner.Value;
+param.w1=app.w1Spinner.Value;
+param.w2=app.w2Spinner.Value;
+param.RL=app.RLSpinner.Value;
+param.Dark=app.DarkSpinner.Value;
+
+ans =
+
+    'I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488_EMTB_mBaojin-P_012_MMStack_Default.ome.tif'
+
+
+katest =
+
+   63.5916
+
+
+katest =
+
+   63.6123
+
+
+katest =
+
+   63.7121
+
+
+katest =
+
+   63.7508
+
+
+katest =
+
+   63.6214
+
+
+katest =
+
+   63.7703
+
+modFac求和未超过保存值，不保存数据
+[gen3DOTF_cache] 参数一致，直接加载 OTF_cache.mat 中的 OTF。
+0.066667
+0.13333
+0.2
+0.26667
+0.33333
+0.4
+0.46667
+0.53333
+0.6
+0.66667
+0.73333
+0.8
+0.86667
+0.93333
+1
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\3I3DSIM\run3I3DSIMrecon.m',94,1)">94  </a>end
+Reconstruction completed successfully!
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m',4,1)">4   </a>param.NA=1.49;
+openvar('app',app);
+{错误使用 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.ui.control.EditField/set.Value', 'D:\MATLAB\R2025a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\EditField.m', 115)" style="font-weight:bold">matlab.ui.control.EditField/set.Value</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\EditField.m',115,0)">第 115 行</a>)
+'Value' 必须为字符向量或字符串标量。
+
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Recon_3I_Lattice_3DSIM2/chooseButtonPushed', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp', 36)" style="font-weight:bold">Recon_3I_Lattice_3DSIM2/chooseButtonPushed</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp',36,0)">第 36 行</a>)
+            app.DataEditField.Value=selectedPath ;
+            ^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)', 'D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m', 54)" style="font-weight:bold">matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m',54,0)">第 54 行</a>)
+            newCallback = @(source, event)executeCallback(ams, ...
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+计算 Button PrivateButtonPushedFcn 时出错。
+
+{错误使用 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.ui.control.EditField/set.Value', 'D:\MATLAB\R2025a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\EditField.m', 115)" style="font-weight:bold">matlab.ui.control.EditField/set.Value</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\uicomponents\uicomponents\+matlab\+ui\+control\EditField.m',115,0)">第 115 行</a>)
+'Value' 必须为字符向量或字符串标量。
+
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Recon_3I_Lattice_3DSIM2/chooseButtonPushed', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp', 36)" style="font-weight:bold">Recon_3I_Lattice_3DSIM2/chooseButtonPushed</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp',36,0)">第 36 行</a>)
+            app.DataEditField.Value=selectedPath ;
+            ^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)', 'D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m', 54)" style="font-weight:bold">matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m',54,0)">第 54 行</a>)
+            newCallback = @(source, event)executeCallback(ams, ...
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+计算 Button PrivateButtonPushedFcn 时出错。
+
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m',4,1)">4   </a>param.NA=1.49;
+app.DataFolderEditField.Value
+{未识别类 'Recon_3I_Lattice_3DSIM2' 的方法、属性或字段 'DataFolderEditField'。
+} 
+app.DataFolderEditField.Value
+{未识别类 'Recon_3I_Lattice_3DSIM2' 的方法、属性或字段 'DataFolderEditField'。
+} 
+app.DataEditField.Value
+
+ans =
+
+    'lattice_hex_488+561_COS7_bj-EM—BD—SEC_013_Channel_488_MMStack_Default.ome.tif'
+
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m',4,1)">4   </a>param.NA=1.49;
+app.DataEditField.Value
+
+ans =
+
+    '.\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488+561_COS7_bj-EM—BD—SEC_013_Channel_488_MMStack_Default.ome.tif'
+
+app.sizeTSpinner.Value
+
+ans =
+
+     1
+
+
+param = 
+
+  包含以下字段的 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a>:
+
+    imgname: '.\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488+561_COS7_bj-EM—BD—SEC_013_Channel_488_MMStack_Default.ome.tif'
+
+<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m',5,1)">5   </a>param.NA=1.49;
+Error occurred: 文件 ".\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488+561_COS7_bj-EM—BD—SEC_013_Channel_488_MMStack_Default.ome.tif" 不存在。
+Error in: tiffreadVolume (line 43)
+Full error stack:
+错误使用 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('tiffreadVolume', 'D:\MATLAB\R2025a\toolbox\images\iptformats\tiffreadVolume.m', 43)" style="font-weight:bold">tiffreadVolume</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\images\iptformats\tiffreadVolume.m',43,0)">第 43 行</a>)
+文件 ".\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_488+561_COS7_bj-EM—BD—SEC_013_Channel_488_MMStack_Default.ome.tif" 不存在。
+
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('recon3I_SIM_ZT_single_data', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\recon3I_SIM_ZT_single_data.m', 2)" style="font-weight:bold">recon3I_SIM_ZT_single_data</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\recon3I_SIM_ZT_single_data.m',2,0)">第 2 行</a>)
+rawdata_all=single(tiffreadVolume(obj.imgname));
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run3I3DSIMrecon', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m', 49)" style="font-weight:bold">run3I3DSIMrecon</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m',49,0)">第 49 行</a>)
+[~, ~] = recon3I_SIM_ZT_single_data(param);
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Recon_3I_Lattice_3DSIM2/StartReconButtonPushed', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp', 45)" style="font-weight:bold">Recon_3I_Lattice_3DSIM2/StartReconButtonPushed</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp',45,0)">第 45 行</a>)
+                run3I3DSIMrecon(app);
+                ^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)', 'D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m', 54)" style="font-weight:bold">matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m',54,0)">第 54 行</a>)
+            newCallback = @(source, event)executeCallback(ams, ...
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+Error occurred: 文件 ".\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_SEC_013_Channel_488_MMStack_Default.ome.tif" 不存在。
+Error in: tiffreadVolume (line 43)
+Full error stack:
+错误使用 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('tiffreadVolume', 'D:\MATLAB\R2025a\toolbox\images\iptformats\tiffreadVolume.m', 43)" style="font-weight:bold">tiffreadVolume</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\images\iptformats\tiffreadVolume.m',43,0)">第 43 行</a>)
+文件 ".\lattice_hex_488_EMTB_mBaojin-P_012\lattice_hex_SEC_013_Channel_488_MMStack_Default.ome.tif" 不存在。
+
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('recon3I_SIM_ZT_single_data', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\recon3I_SIM_ZT_single_data.m', 2)" style="font-weight:bold">recon3I_SIM_ZT_single_data</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\recon3I_SIM_ZT_single_data.m',2,0)">第 2 行</a>)
+rawdata_all=single(tiffreadVolume(obj.imgname));
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run3I3DSIMrecon', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m', 49)" style="font-weight:bold">run3I3DSIMrecon</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\run3I3DSIMrecon.m',49,0)">第 49 行</a>)
+[~, ~] = recon3I_SIM_ZT_single_data(param);
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('Recon_3I_Lattice_3DSIM2/StartReconButtonPushed', 'I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp', 45)" style="font-weight:bold">Recon_3I_Lattice_3DSIM2/StartReconButtonPushed</a> (<a href="matlab: opentoline('I:\Lattice3DSIM\3I3DSIM submit\20251124上传版本\3D-Lattice-SIMnoZeiss加单文件逻辑\3D-Lattice-SIM\3D-Lattice-SIM_program_and_code_single_file_reconstruction\rawcode\Recon_3I_Lattice_3DSIM2.mlapp',45,0)">第 45 行</a>)
+                run3I3DSIMrecon(app);
+                ^^^^^^^^^^^^^^^^^^^^
+出错 <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)', 'D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m', 54)" style="font-weight:bold">matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event)</a> (<a href="matlab: opentoline('D:\MATLAB\R2025a\toolbox\matlab\appdesigner\appdesigner\runtime\+matlab\+apps\AppBase.m',54,0)">第 54 行</a>)
+            newCallback = @(source, event)executeCallback(ams, ...
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+
+katest =
+
+   38.1333
+
+
+katest =
+
+   38.1704
+
+
+katest =
+
+   38.2499
+
+
+katest =
+
+   38.1851
+
+
+katest =
+
+   38.1601
+
+
+katest =
+
+   38.2335
+
+modFac求和未超过保存值，不保存数据
+[gen3DOTF_cache] 参数一致，直接加载 OTF_cache.mat 中的 OTF。
+Reconstruction completed successfully!
